@@ -1,0 +1,55 @@
+{
+  "name": "peasy-css",
+  "version": "0.1.1",
+  "description": "Pure TypeScript CSS generator — gradients, shadows, flexbox, grid, animations, transforms, filters, glassmorphism, typography, clamp, and more. Zero dependencies, fully typed.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "css",
+    "css-generator",
+    "gradient",
+    "box-shadow",
+    "flexbox",
+    "css-grid",
+    "animation",
+    "keyframes",
+    "transform",
+    "filter",
+    "glassmorphism",
+    "typography",
+    "clamp",
+    "media-query",
+    "border-radius",
+    "transition",
+    "aspect-ratio",
+    "css-in-js",
+    "zero-dependencies"
+  ],
+  "author": "Peasy Tools",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peasytools/peasy-css-js.git"
+  },
+  "homepage": "https://peasycss.com",
+  "devDependencies": {
+    "tsup": "^8.0",
+    "typescript": "^5.7",
+    "vitest": "^3.0"
+  }
+}
