@@ -9,7 +9,7 @@ Pure TypeScript CSS generator — gradients, shadows, flexbox, grid, animations,
 
 Built from [PeasyCSS](https://peasycss.com), the interactive CSS tools platform with 200+ generators and references.
 
-> **Try the interactive tools at [peasycss.com](https://peasycss.com)** — [Gradient Generator](https://peasycss.com/tools/gradient/), [Box Shadow](https://peasycss.com/tools/box-shadow/), [Flexbox](https://peasycss.com/tools/flexbox/), [Grid](https://peasycss.com/tools/grid/), [Glassmorphism](https://peasycss.com/tools/glassmorphism/)
+> **Try the interactive tools at [peasycss.com](https://peasycss.com)** — gradient generator, box shadow, flexbox, grid, glassmorphism, and 200+ more CSS tools
 
 <p align="center">
   <img src="demo.gif" alt="peasy-css demo — CSS minification, formatting, and analysis in terminal" width="800">
@@ -111,7 +111,7 @@ gradientCss(".hero", ["#667eea", "#764ba2"]);
 // → ".hero {\n  background: linear-gradient(to right, #667eea, #764ba2);\n}"
 ```
 
-Learn more: [Gradient Generator](https://peasycss.com/tools/gradient/) · [CSS Gradients Guide](https://peasycss.com/glossary/gradient/)
+Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
 
 ### Box Shadows
 
@@ -133,7 +133,7 @@ boxShadow(
 );
 ```
 
-Learn more: [Box Shadow Generator](https://peasycss.com/tools/box-shadow/) · [CSS Shadows Guide](https://peasycss.com/glossary/box-shadow/)
+Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
 
 ### Flexbox Layouts
 
@@ -152,7 +152,7 @@ flexbox({ wrap: "wrap", gap: "1.5rem", justify: "space-between" });
 flexboxCss(".navbar", { direction: "row", justify: "space-between", align: "center" });
 ```
 
-Learn more: [Flexbox Generator](https://peasycss.com/tools/flexbox/) · [Flexbox Guide](https://peasycss.com/glossary/flexbox/)
+Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
 
 ### CSS Grid
 
@@ -171,7 +171,7 @@ grid({ columns: "repeat(auto-fill, minmax(250px, 1fr))", autoFlow: "dense" });
 gridCss(".dashboard", { columns: "250px 1fr 1fr", rows: "auto 1fr auto", gap: "2rem" });
 ```
 
-Learn more: [Grid Generator](https://peasycss.com/tools/grid/) · [CSS Grid Guide](https://peasycss.com/glossary/grid/)
+Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
 
 ### Animations & Keyframes
 
@@ -191,7 +191,7 @@ keyframes("fadeIn", [
 ]);
 ```
 
-Learn more: [Animation Generator](https://peasycss.com/tools/animation/) · [CSS Animation Guide](https://peasycss.com/glossary/animation/)
+Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
 
 ### Transforms
 
@@ -207,7 +207,7 @@ transform({ translateX: "10px", translateY: "20px", rotate: "45deg", scaleX: "1.
 // → "translate(10px, 20px) rotate(45deg) scale(1.5, 1)"
 ```
 
-Learn more: [Transform Generator](https://peasycss.com/tools/transform/) · [CSS Transform Guide](https://peasycss.com/glossary/transform/)
+Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
 
 ### CSS Filters
 
@@ -223,7 +223,7 @@ cssFilter({ blur: "2px", brightness: "120%", grayscale: "50%" });
 // → "blur(2px) brightness(120%) grayscale(50%)"
 ```
 
-Learn more: [Filter Generator](https://peasycss.com/tools/filter/) · [CSS Filter Guide](https://peasycss.com/glossary/filter/)
+Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
 
 ### Glassmorphism
 
@@ -238,7 +238,7 @@ glassmorphism();
 glassmorphismCss(".modal", { blur: "15px", background: "rgba(0,0,0,0.3)" });
 ```
 
-Learn more: [Glassmorphism Generator](https://peasycss.com/tools/glassmorphism/) · [Glassmorphism Guide](https://peasycss.com/glossary/glassmorphism/)
+Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
 
 ### Fluid Typography
 
@@ -254,7 +254,7 @@ clampFontCss("h1", "1.5rem", "4vw", "3rem");
 // → "h1 {\n  font-size: clamp(1.5rem, 4vw, 3rem);\n}"
 ```
 
-Learn more: [Clamp Calculator](https://peasycss.com/tools/clamp/) · [CSS Clamp Guide](https://peasycss.com/glossary/clamp/)
+Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
 
 ### Media Queries
 
@@ -335,9 +335,8 @@ import type {
 
 ## Learn More About CSS
 
-- **Tools**: [Gradient Generator](https://peasycss.com/tools/gradient/) · [Box Shadow](https://peasycss.com/tools/box-shadow/) · [Flexbox](https://peasycss.com/tools/flexbox/) · [Grid](https://peasycss.com/tools/grid/)
-- **Effects**: [Glassmorphism](https://peasycss.com/tools/glassmorphism/) · [Animation](https://peasycss.com/tools/animation/) · [Transform](https://peasycss.com/tools/transform/)
-- **Reference**: [CSS Glossary](https://peasycss.com/glossary/) · [All CSS Tools](https://peasycss.com/tools/)
+- **Tools**: [PeasyCSS](https://peasycss.com) — 200+ interactive CSS generators and references
+- **Reference**: [CSS Glossary](https://peasycss.com/glossary/)
 - **API**: [REST API Docs](https://peasycss.com/developers/) · [OpenAPI Spec](https://peasycss.com/api/openapi.json)
 - **Python**: [PyPI Package](https://pypi.org/project/peasy-css/)
 
