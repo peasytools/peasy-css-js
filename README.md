@@ -112,7 +112,7 @@ gradientCss(".hero", ["#667eea", "#764ba2"]);
 // → ".hero {\n  background: linear-gradient(to right, #667eea, #764ba2);\n}"
 ```
 
-Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
+Learn more: [CSS Gradient Generator](https://peasycss.com/css/css-gradient/) · [CSS Gradients Guide](https://peasycss.com/guides/css-gradients-guide/) · [Gradient Design Trends & Techniques](https://peasycss.com/guides/gradient-design-trends-techniques/)
 
 ### Box Shadows
 
@@ -134,7 +134,7 @@ boxShadow(
 );
 ```
 
-Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
+Learn more: [CSS Box Shadow Generator](https://peasycss.com/css/css-shadow/) · [What is Box Model?](https://peasycss.com/glossary/box-model/) · [What is Stacking Context?](https://peasycss.com/glossary/stacking-context/)
 
 ### Flexbox Layouts
 
@@ -153,7 +153,7 @@ flexbox({ wrap: "wrap", gap: "1.5rem", justify: "space-between" });
 flexboxCss(".navbar", { direction: "row", justify: "space-between", align: "center" });
 ```
 
-Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
+Learn more: [CSS Flexbox Generator](https://peasycss.com/css/css-flexbox/) · [Flexbox vs CSS Grid](https://peasycss.com/guides/flexbox-vs-css-grid/) · [What is Flexbox?](https://peasycss.com/glossary/flexbox/)
 
 ### CSS Grid
 
@@ -172,7 +172,7 @@ grid({ columns: "repeat(auto-fill, minmax(250px, 1fr))", autoFlow: "dense" });
 gridCss(".dashboard", { columns: "250px 1fr 1fr", rows: "auto 1fr auto", gap: "2rem" });
 ```
 
-Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
+Learn more: [CSS Grid Generator](https://peasycss.com/css/css-grid/) · [CSS Grid vs Flexbox: When to Use Each](https://peasycss.com/guides/css-grid-vs-flexbox-when-to-use-each/) · [What is CSS Grid?](https://peasycss.com/glossary/grid/)
 
 ### Animations & Keyframes
 
@@ -192,7 +192,7 @@ keyframes("fadeIn", [
 ]);
 ```
 
-Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
+Learn more: [CSS Animation Generator](https://peasycss.com/css/css-animation/) · [How to Create CSS Animations](https://peasycss.com/guides/how-to-create-css-animations/) · [What is Keyframe Animation?](https://peasycss.com/glossary/keyframe-animation/)
 
 ### Transforms
 
@@ -208,7 +208,7 @@ transform({ translateX: "10px", translateY: "20px", rotate: "45deg", scaleX: "1.
 // → "translate(10px, 20px) rotate(45deg) scale(1.5, 1)"
 ```
 
-Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
+Learn more: [CSS Transform Generator](https://peasycss.com/css/css-transform/) · [CSS Animation Performance Guide](https://peasycss.com/guides/css-animation-performance-guide/) · [What is Transition?](https://peasycss.com/glossary/transition/)
 
 ### CSS Filters
 
@@ -224,7 +224,7 @@ cssFilter({ blur: "2px", brightness: "120%", grayscale: "50%" });
 // → "blur(2px) brightness(120%) grayscale(50%)"
 ```
 
-Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
+Learn more: [CSS Filter Effects Generator](https://peasycss.com/css/css-filter-effects/) · [CSS Clip Path Generator](https://peasycss.com/css/css-clip-path/) · [What is Color Function?](https://peasycss.com/glossary/color-function/)
 
 ### Glassmorphism
 
@@ -239,7 +239,7 @@ glassmorphism();
 glassmorphismCss(".modal", { blur: "15px", background: "rgba(0,0,0,0.3)" });
 ```
 
-Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
+Learn more: [Dark Mode Design Best Practices](https://peasycss.com/guides/dark-mode-design-best-practices/) · [What is Custom Property?](https://peasycss.com/glossary/custom-property/) · [What is Cascade?](https://peasycss.com/glossary/cascade/)
 
 ### Fluid Typography
 
@@ -255,7 +255,7 @@ clampFontCss("h1", "1.5rem", "4vw", "3rem");
 // → "h1 {\n  font-size: clamp(1.5rem, 4vw, 3rem);\n}"
 ```
 
-Learn more: [PeasyCSS](https://peasycss.com) · [CSS Glossary](https://peasycss.com/glossary/)
+Learn more: [Fluid Typography with Clamp in Modern CSS](https://peasycss.com/guides/fluid-typography-clamp-modern-css/) · [What is Clamp?](https://peasycss.com/glossary/clamp/) · [What is Viewport Unit?](https://peasycss.com/glossary/viewport-unit/)
 
 ### Media Queries
 
@@ -270,6 +270,8 @@ mediaQuery("768px", ".sidebar { display: block; }");
 // Desktop-first (max-width)
 mediaQuery("480px", "body { font-size: 14px; }", "max-width");
 ```
+
+Learn more: [CSS Media Query Generator](https://peasycss.com/css/css-media-query-generator/) · [Responsive Layouts Without Media Queries](https://peasycss.com/guides/responsive-layouts-without-media-queries/) · [What is Media Query?](https://peasycss.com/glossary/media-query/)
 
 ## API Reference
 
@@ -368,10 +370,10 @@ Full API documentation at [peasycss.com/developers/](https://peasycss.com/develo
 
 ## Learn More
 
-- **Tools**: [CSS Minify](https://peasycss.com/css/css-minify/) · [CSS Beautify](https://peasycss.com/css/css-beautify/) · [CSS Gradient Generator](https://peasycss.com/css/css-gradient/) · [All Tools](https://peasycss.com/)
-- **Guides**: [CSS Units Explained](https://peasycss.com/guides/css-units-explained/) · [CSS Grid vs Flexbox](https://peasycss.com/guides/css-grid-vs-flexbox-when-to-use-each/) · [All Guides](https://peasycss.com/guides/)
-- **Glossary**: [BEM](https://peasycss.com/glossary/bem/) · [Box Model](https://peasycss.com/glossary/box-model/) · [Cascade](https://peasycss.com/glossary/cascade/) · [All Terms](https://peasycss.com/glossary/)
-- **Formats**: [CSS](https://peasycss.com/formats/css/) · [SVG](https://peasycss.com/formats/svg/) · [All Formats](https://peasycss.com/formats/)
+- **Tools**: [CSS Minify](https://peasycss.com/css/css-minify/) · [CSS Beautify](https://peasycss.com/css/css-beautify/) · [CSS Gradient Generator](https://peasycss.com/css/css-gradient/) · [Box Shadow Generator](https://peasycss.com/css/css-shadow/) · [Flexbox Generator](https://peasycss.com/css/css-flexbox/) · [Grid Generator](https://peasycss.com/css/css-grid/) · [Animation Generator](https://peasycss.com/css/css-animation/) · [Transform Generator](https://peasycss.com/css/css-transform/) · [Filter Effects](https://peasycss.com/css/css-filter-effects/) · [Media Query Generator](https://peasycss.com/css/css-media-query-generator/) · [Border Radius](https://peasycss.com/css/css-border-radius/) · [Text Shadow](https://peasycss.com/css/css-text-shadow/) · [Clip Path](https://peasycss.com/css/css-clip-path/) · [Unit Converter](https://peasycss.com/css/css-unit-converter/) · [Color Converter](https://peasycss.com/css/css-color-converter/) · [All CSS Tools](https://peasycss.com/)
+- **Guides**: [CSS Units Explained](https://peasycss.com/guides/css-units-explained/) · [CSS Grid vs Flexbox](https://peasycss.com/guides/css-grid-vs-flexbox-when-to-use-each/) · [CSS Custom Properties Guide](https://peasycss.com/guides/css-custom-properties-variables-complete-guide/) · [CSS Animation Performance](https://peasycss.com/guides/css-animation-performance-browser-guide/) · [CSS Gradients Guide](https://peasycss.com/guides/css-gradients-guide/) · [Flexbox vs CSS Grid](https://peasycss.com/guides/flexbox-vs-css-grid/) · [Dark Mode Best Practices](https://peasycss.com/guides/dark-mode-design-best-practices/) · [How to Create CSS Animations](https://peasycss.com/guides/how-to-create-css-animations/) · [Responsive Layouts Without Media Queries](https://peasycss.com/guides/responsive-layouts-without-media-queries/) · [Troubleshooting CSS Specificity](https://peasycss.com/guides/troubleshooting-css-specificity/) · [Fluid Typography with Clamp](https://peasycss.com/guides/fluid-typography-clamp-modern-css/) · [How to Minify CSS for Production](https://peasycss.com/guides/how-to-minify-css-production/) · [All Guides](https://peasycss.com/guides/)
+- **Glossary**: [Flexbox](https://peasycss.com/glossary/flexbox/) · [CSS Grid](https://peasycss.com/glossary/grid/) · [Box Model](https://peasycss.com/glossary/box-model/) · [Cascade](https://peasycss.com/glossary/cascade/) · [Specificity](https://peasycss.com/glossary/specificity/) · [Custom Property](https://peasycss.com/glossary/custom-property/) · [Media Query](https://peasycss.com/glossary/media-query/) · [Keyframe Animation](https://peasycss.com/glossary/keyframe-animation/) · [Clamp](https://peasycss.com/glossary/clamp/) · [BEM](https://peasycss.com/glossary/bem/) · [Z-Index](https://peasycss.com/glossary/z-index/) · [Transition](https://peasycss.com/glossary/transition/) · [Viewport Unit](https://peasycss.com/glossary/viewport-unit/) · [Pseudo Class](https://peasycss.com/glossary/pseudo-class/) · [All Terms](https://peasycss.com/glossary/)
+- **Formats**: [CSS](https://peasycss.com/formats/css/) · [SVG](https://peasycss.com/formats/svg/) · [HTML](https://peasycss.com/formats/html/) · [SCSS](https://peasycss.com/formats/scss/) · [LESS](https://peasycss.com/formats/less/) · [All Formats](https://peasycss.com/formats/)
 - **API**: [REST API Docs](https://peasycss.com/developers/) · [OpenAPI Spec](https://peasycss.com/api/openapi.json)
 
 ## Also Available
