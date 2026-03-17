@@ -32,8 +32,9 @@ Built from [PeasyCSS](https://peasycss.com), the interactive CSS tools platform 
   - [Media Queries](#media-queries)
 - [API Reference](#api-reference)
 - [TypeScript Types](#typescript-types)
-- [Learn More About CSS](#learn-more-about-css)
-- [Also Available for Python](#also-available-for-python)
+- [REST API Client](#rest-api-client)
+- [Learn More](#learn-more)
+- [Also Available](#also-available)
 - [Peasy Developer Tools](#peasy-developer-tools)
 - [License](#license)
 
@@ -333,31 +334,69 @@ import type {
 } from "peasy-css";
 ```
 
-## Learn More About CSS
+## REST API Client
 
-- **Tools**: [PeasyCSS](https://peasycss.com) — 200+ interactive CSS generators and references
-- **Reference**: [CSS Glossary](https://peasycss.com/glossary/)
-- **API**: [REST API Docs](https://peasycss.com/developers/) · [OpenAPI Spec](https://peasycss.com/api/openapi.json)
-- **Python**: [PyPI Package](https://pypi.org/project/peasy-css/)
+The API client connects to the [PeasyCSS developer API](https://peasycss.com/developers/) for tool discovery and content.
 
-## Also Available for Python
+```typescript
+import { PeasyCssClient } from "peasy-css";
 
-```bash
-pip install peasy-css
+const client = new PeasyCssClient();
+
+// List available tools
+const tools = await client.listTools();
+console.log(tools.results);
+
+// Search across all content
+const results = await client.search("minify");
+console.log(results);
+
+// Browse the glossary
+const glossary = await client.listGlossary({ search: "format" });
+for (const term of glossary.results) {
+  console.log(`${term.term}: ${term.definition}`);
+}
+
+// Discover guides
+const guides = await client.listGuides({ category: "css" });
+for (const guide of guides.results) {
+  console.log(`${guide.title} (${guide.audience_level})`);
+}
 ```
 
-The Python package provides the same 15 CSS generators with CLI, MCP server, and REST API client. See [peasy-css on PyPI](https://pypi.org/project/peasy-css/).
+Full API documentation at [peasycss.com/developers/](https://peasycss.com/developers/).
+
+## Learn More
+
+- **Tools**: [CSS Minify](https://peasycss.com/tools/css-minify/) · [CSS Format](https://peasycss.com/tools/css-format/) · [CSS Gradient](https://peasycss.com/tools/css-gradient/) · [All Tools](https://peasycss.com/)
+- **Guides**: [Flexbox Guide](https://peasycss.com/guides/flexbox/) · [Grid Guide](https://peasycss.com/guides/grid/) · [All Guides](https://peasycss.com/guides/)
+- **Glossary**: [Flexbox](https://peasycss.com/glossary/flexbox/) · [Grid](https://peasycss.com/glossary/grid/) · [All Terms](https://peasycss.com/glossary/)
+- **Formats**: [Minified CSS](https://peasycss.com/formats/minify/) · [All Formats](https://peasycss.com/formats/)
+- **API**: [REST API Docs](https://peasycss.com/developers/) · [OpenAPI Spec](https://peasycss.com/api/openapi.json)
+
+## Also Available
+
+| Language | Package | Install |
+|----------|---------|---------|
+| **Python** | [peasy-css](https://pypi.org/project/peasy-css/) | `pip install "peasy-css[all]"` |
+| **Go** | [peasy-css-go](https://pkg.go.dev/github.com/peasytools/peasy-css-go) | `go get github.com/peasytools/peasy-css-go` |
+| **Rust** | [peasy-css](https://crates.io/crates/peasy-css) | `cargo add peasy-css` |
+| **Ruby** | [peasy-css](https://rubygems.org/gems/peasy-css) | `gem install peasy-css` |
 
 ## Peasy Developer Tools
 
+Part of the [Peasy Tools](https://peasytools.com) open-source developer ecosystem.
+
 | Package | PyPI | npm | Description |
 |---------|------|-----|-------------|
-| peasytext | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext) | Text analysis — readability, sentiment, keywords |
-| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | — | PDF processing — extract, merge, split, metadata |
-| peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | — | Image ops — resize, crop, filter, watermark |
-| **peasy-css** | [PyPI](https://pypi.org/project/peasy-css/) | **[npm](https://www.npmjs.com/package/peasy-css)** | **CSS generation — gradients, shadows, flexbox, grid** |
-
-Part of the [Peasy](https://peasytools.com) developer tools ecosystem.
+| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | [npm](https://www.npmjs.com/package/peasy-pdf) | PDF merge, split, rotate, compress, 21 operations — [peasypdf.com](https://peasypdf.com) |
+| peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | [npm](https://www.npmjs.com/package/peasy-image) | Image resize, crop, convert, compress — [peasyimage.com](https://peasyimage.com) |
+| peasy-audio | [PyPI](https://pypi.org/project/peasy-audio/) | [npm](https://www.npmjs.com/package/peasy-audio) | Audio trim, merge, convert, normalize — [peasyaudio.com](https://peasyaudio.com) |
+| peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | [npm](https://www.npmjs.com/package/peasy-video) | Video trim, resize, thumbnails, GIF — [peasyvideo.com](https://peasyvideo.com) |
+| **peasy-css** | **[PyPI](https://pypi.org/project/peasy-css/)** | **[npm](https://www.npmjs.com/package/peasy-css)** | **CSS minify, format, analyze — [peasycss.com](https://peasycss.com)** |
+| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | [npm](https://www.npmjs.com/package/peasy-compress) | ZIP, TAR, gzip compression — [peasytools.com](https://peasytools.com) |
+| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | [npm](https://www.npmjs.com/package/peasy-document) | Markdown, HTML, CSV, JSON conversion — [peasyformats.com](https://peasyformats.com) |
+| peasytext | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext) | Text case conversion, slugify, word count — [peasytext.com](https://peasytext.com) |
 
 ## License
 
