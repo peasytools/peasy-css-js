@@ -1,6 +1,6 @@
 {
   "name": "peasy-css",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Pure TypeScript CSS generator — gradients, shadows, flexbox, grid, animations, transforms, filters, glassmorphism, typography, clamp, and more. Zero dependencies, fully typed.",
   "type": "module",
   "main": "dist/index.js",
