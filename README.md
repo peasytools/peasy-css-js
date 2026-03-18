@@ -13,7 +13,7 @@ Built from [PeasyCSS](https://peasycss.com), the interactive CSS tools platform 
 > **Try the interactive tools at [peasycss.com](https://peasycss.com)** — gradient generator, box shadow, flexbox, grid, glassmorphism, and 200+ more CSS tools
 
 <p align="center">
-  <img src="demo.gif" alt="peasy-css demo — CSS minification, formatting, and analysis in terminal" width="800">
+  <a href="https://agentgif.com/ot3YMDXc"><img src="https://media.agentgif.com/ot3YMDXc.gif" alt="peasy-css demo — CSS minification, formatting, and analysis in terminal" width="800"></a>
 </p>
 
 ## Table of Contents
